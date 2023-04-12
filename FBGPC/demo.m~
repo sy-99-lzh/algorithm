@@ -1,0 +1,41 @@
+
+clear;
+clc;
+%% Example
+% data
+data1 =  0.9*randn(200,400);
+data2 = 0.3*randn(200,1600);
+data3 = 0.3*randn(300,400);
+data4 = 0.9*randn(300,600);
+data5 = 0.3*randn(300,500);
+data6 = 0.9*randn(300,500);
+data7 = 0.3*randn(500,400);
+data8 = 0.3*randn(500,600);
+data9 = 0.9*randn(500,1000);
+% row labels
+rlabel1 = ones(200,1);
+rlabel2 = 2*ones(300,1);
+rlabel3 = 3*ones(500,1);
+% column labels
+clabel1 = ones(400,1);
+clabel2 = 2*ones(600,1);
+clabel3 = 3*ones(500,1);
+clabel4 = 4*ones(500,1);
+
+
+rlabels = [rlabel1;rlabel2;rlabel3];
+clabels = [clabel1;clabel2;clabel3;clabel4];
+data = [data1,data2;data3,data4,data5,data6;data7,data8,data9];
+
+%???????Fast Flexible Bipartite Graph Model for Co-Clustering?????
+ stop_iter = 10;
+ sparse_ratio = 0.7;
+ c1 =length(unique(row_));
+ c2 =;
+ 
+ tic
+ [r,c] = FBGPC(data, c1, c2, stop_iter, sparse_ratio, 0.001);
+ run_time = toc
+ Accuracy = calculateAccuracy(rlabels',r')
+
+ 
