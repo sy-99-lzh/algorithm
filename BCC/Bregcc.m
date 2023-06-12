@@ -10,10 +10,4 @@ r=sum(R,2);
 for j=1:l
     C(:,j)=C(:,j)*j;
 end
-c=sum(C,2);
-
-    
-
-
-
-    
+c=sum(C,2);    
