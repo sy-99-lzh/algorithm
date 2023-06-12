@@ -5,7 +5,6 @@ function [F S G residue] = DRCC(X,m1,m2,lambda,mu,ITE,option)
 %2009.2.6
 %min ||X-G*S*F'||_F^2+lambda*tr(F'*LF*F)+mu*tr(G'*LG*G)
 
-
 [d n]=size(X); 
 
 %construct data graph
